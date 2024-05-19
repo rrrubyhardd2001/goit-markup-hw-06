@@ -47,14 +47,14 @@ ul {
   margin: 0 auto;
   padding: 0 15px;
 }
-.section {
-  padding: 120px auto;
-}
 img {
   display: block;
+  object-fit: cover;
+  height: auto;
+  max-width: 100%;
 }
 section {
-  padding: 120px 0;
+  margin: 0 auto;
 }
 
 /* header */
@@ -65,6 +65,7 @@ section {
   justify-content: space-between;
 }
 .header_header {
+  margin: 0 auto;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -130,7 +131,7 @@ section {
   gap: 40px;
 }
 .header_address {
-  font-style: normal;
+  font-size: 16px;
 }
 .header_list_link {
   padding: 24px 0;
@@ -159,11 +160,10 @@ section {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 1440px;
+  width: 100%;
 }
 .first_section {
   padding: 188px 0;
-  margin: 0 auto;
 }
 .first_s_title {
   max-width: 496px;
@@ -253,7 +253,7 @@ section {
 .third_s_item {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  flex-basis: calc((100% - 3 * 24px) / 4);
+  /* flex-basis: calc((100% - 3 * 24px) / 4); */
 }
 .third_worker_wrap {
   padding: 32px 0;
@@ -315,7 +315,6 @@ section {
   row-gap: 48px;
 }
 .fourth_s_item {
-  /* width: calc((100% - 48px) / 3); */
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .fourth_s_item:hover,
@@ -359,6 +358,12 @@ section {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+}
+.fourth_s_page {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
 }
 
 /* footer */
