@@ -47,14 +47,14 @@
   </header>
 
 
-  <div class="wrapper_mobile_menu">
+  <div class="wrapper_mobile_menu is-open">
     <div class="container mobile_container_menu">
-      <button type="button" class="mobile_overlay_button"><svg class="mobile_overlay_svg" width="9" height="9">
+      <button type="button" class="mobile_overlay_button"><svg class="mobile_overlay_svg" width="8" height="8">
           <use href="./images/form.svg#icon-Vector"></use>
         </svg></button>
       <nav class="mobile_nav_menu">
         <ul class="mobile_list">
-          <li class="mobile_item"><a href="" class="mobile_link">Studio</a></li>
+          <li class="mobile_item"><a href="" class="mobile_link mc_active_color">Studio</a></li>
           <li class="mobile_item"><a href="" class="mobile_link">Portfolio</a></li>
           <li class="mobile_item"><a href="" class="mobile_link">Contacts</a></li>
         </ul>
@@ -62,10 +62,10 @@
       <address class="mobile_address">
         <ul class="mobile_list_address">
           <li class="mobile_list_item">
-            <a href="mailto:info@devstudio.com" class="mobile_list_link">info@devstudio.com</a>
+            <a href="tel:+110001111111" class="mobile_list_lin mb_active_color">+11 (000) 111-11-11</a>
           </li>
           <li class="mobile_list_item">
-            <a href="tel:+110001111111" class="mobile_list_link">+11 (000) 111-11-11</a>
+            <a href="mailto:info@devstudio.com" class="mobile_list_link">info@devstudio.com</a>
           </li>
         </ul>
       </address>
@@ -169,16 +169,8 @@
         <ul class="third_s_list">
           <li class="third_s_item">
             <div class="third_s_workers">
-              <picture>
-                <source media="(min-width: 1158px)"
-                  srcset="./images/main_team/main_team-mark-min.jpg 1x , ./images/main_team/main_team2x-mark-min.jpg 2x" />
-                <source media="(min-width: 768px)"
-                  srcset="./images/tablet_team/table_team-mark-min.jpg 1x , ./images/tablet_team/table_team2x-mark-min.jpg 2x" />
-                <source media="(max-width: 767px)"
-                  srcset="./images/mobile_team/mobile_team-mark-min.jpg 1x , ./images/mobile_team/mobile_team2x-mark-min.jpg 2x" />
-
-                <img src=" ./images/main_team/main_team-mark-min.jpg" alt="product_designer" width="264">
-              </picture>
+              <img srcset="./images/main_team/main_team-mark-min.jpg 1x, ./images/main_team/main_team2x-mark-min.jpg 2x"
+                src=" ./images/main_team/main_team-mark-min.jpg" alt="product_designer" width="264">
             </div>
             <div class="third_worker_wrap">
               <h3 class="third_worker_name">Mark Guerrero</h3>
@@ -213,7 +205,8 @@
           </li>
           <li class="third_s_item">
             <div class="third_s_workers">
-              <img src="./images/main_team/main_team-tom-min.jpg" class="third_s_workers" alt="fronted_developer"
+              <img srcset="./images/main_team/main_team-tom-min.jpg 1x, ./images/main_team/main_team2x-tom-min.jpg 2x"
+                src="./images/main_team/main_team-tom-min.jpg" class="third_s_workers" alt="fronted_developer"
                 width="264" />
             </div>
             <div class="third_worker_wrap">
@@ -249,7 +242,9 @@
           </li>
           <li class="third_s_item">
             <div class="third_s_workers">
-              <img src="./images/main_team/main_team-camila-min.jpg" class="third_s_workers" alt="marketing_stuff"
+              <img
+                srcset="./images/main_team/main_team-camila-min.jpg 1x, ./images/main_team/main_team2x-camila-min.jpg 2x"
+                src="./images/main_team/main_team-camila-min.jpg" class="third_s_workers" alt="marketing_stuff"
                 width="264" />
             </div>
             <div class="third_worker_wrap">
@@ -285,7 +280,9 @@
           </li>
           <li class="third_s_item">
             <div class="third_s_workers">
-              <img src="./images/main_team/main_team-daniel-min.jpg" class="third_s_workers" alt="ui_designer"
+              <img
+                srcset="./images/main_team/main_team-daniel-min.jpg 1x, ./images/main_team/main_team2x-daniel-min.jpg 2x"
+                src="./images/main_team/main_team-daniel-min.jpg" class="third_s_workers" alt="ui_designer"
                 width="264" />
             </div>
             <div class="third_worker_wrap">
@@ -329,7 +326,15 @@
         <ul class="fourth_s_list">
           <li class="fourth_s_item">
             <div class="fourth_s_wrap_img">
-              <img src="./images/main_portfolio/portfolio_main-app-min.jpg" alt="mobileapp" />
+              <picture>
+                <source media="(min-width: 1158px)"
+                  srcset="./images/main_portfolio/portfolio_main-app-min.jpg 1x, ./images/main_portfolio/portfolio_main2x-app-min.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./images/tablet_portfolio/tablet_portfolio-app-min.jpg 1x, ./images/tablet_portfolio/tablet_portfolio2x-app-min.jpg 2x">
+                <source media="(max-width: 767px)"
+                  srcset="./images/mobile_portfolio/mobile_portfolio-app-min.jpg 1x, ./images/mobile_portfolio/mobile_portfolio2x-app-min.jpg 2x">
+                <img src="./images/main_portfolio/portfolio_main-app-min.jpg" alt="mobileapp" />
+              </picture>
               <p class="fourth_s_wrap_img_page">
                 14 Stylish and User-Friendly App Design Concepts · Task
                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -343,7 +348,15 @@
           </li>
           <li class="fourth_s_item">
             <div class="fourth_s_wrap_img">
-              <img src="./images/main_portfolio/portfolio_main-qrcode-min.jpg" alt="methodpaying" width="360" />
+              <picture>
+                <source media="(min-width: 1158px)"
+                  srcset="./images/main_portfolio/portfolio_main-qrcode-min.jpg 1x, ./images/main_portfolio/portfolio_main2x-qrcode-min.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./images/tablet_portfolio/tablet_portfolio-qrcode-min.jpg 1x, ./images/tablet_portfolio/tablet_portfolio2x-qrcode-min.jpg 2x">
+                <source media="(max-width: 767px)"
+                  srcset="./images/mobile_portfolio/mobile_portfolio-qrcode-min.jpg 1x, ./images/mobile_portfolio/mobile_portfolio2x-qrcode-min.jpg 2x">
+                <img src="./images/main_portfolio/portfolio_main-qrcode-min.jpg" alt="methodpaying" width="360" />
+              </picture>
               <p class="fourth_s_wrap_img_page">
                 14 Stylish and User-Friendly App Design Concepts · Task
                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -358,7 +371,15 @@
           </li>
           <li class="fourth_s_item">
             <div class="fourth_s_wrap_img">
-              <img src="./images/main_portfolio/portfolio_main-laptop-min.jpg" alt="meditationapp" width="360" />
+              <picture>
+                <source media="(min-width: 1158px)"
+                  srcset="./images/main_portfolio/portfolio_main-laptop-min.jpg 1x, ./images/main_portfolio/portfolio_main2x-laptop-min.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./images/tablet_portfolio/tablet_portfolio-laptop-min.jpg 1x, ./images/tablet_portfolio/tablet_portfolio2x-laptop-min.jpg 2x">
+                <source media="(max-width: 767px)"
+                  srcset="./images/mobile_portfolio/mobile_portfolio-laptop-min.jpg 1x, ./images/mobile_portfolio/mobile_portfolio2x-laptop-min.jpg 2x">
+                <img src="./images/main_portfolio/portfolio_main-laptop-min.jpg" alt="meditationapp" width="360" />
+              </picture>
               <p class="fourth_s_wrap_img_page">
                 14 Stylish and User-Friendly App Design Concepts · Task
                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -373,11 +394,19 @@
           </li>
           <li class="fourth_s_item">
             <div class="fourth_s_wrap_img">
-              <img src="./images/main_portfolio/portfolio_main-car-min.jpg" alt="thisiscar" width="360" />
-              <p class="fourth_s_wrap_img_page">
-                14 Stylish and User-Friendly App Design Concepts · Task
-                Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
-                · Cloud Storage App
+              <picture>
+                <source media="(min-width: 1158px)"
+                  srcset="./images/main_portfolio/portfolio_main-car-min.jpg 1x, ./images/main_portfolio/portfolio_main2x-car-min.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./images/tablet_portfolio/tablet_portfolio-car-min.jpg 1x, ./images/tablet_portfolio/tablet_portfolio2x-car-min.jpg 2x">
+                <source media="(max-width: 767px)"
+                  srcset="./images/mobile_portfolio/mobile_portfolio-car-min.jpg 1x, ./images/mobile_portfolio/mobile_portfolio2x-car-min.jpg 2x">
+                <img src="./images/main_portfolio/portfolio_main-car-min.jpg" alt="thisiscar" width="360" />
+                <p class="fourth_s_wrap_img_page">
+              </picture>
+              14 Stylish and User-Friendly App Design Concepts · Task
+              Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
+              · Cloud Storage App
               </p>
             </div>
             <div class="fourth_s_wrap_app">
@@ -387,7 +416,15 @@
           </li>
           <li class="fourth_s_item">
             <div class="fourth_s_wrap_img">
-              <img src="./images/main_portfolio/portfolio_main-mobile-min.jpg" alt="setofphotos" width="360" />
+              <picture>
+                <source media="(min-width: 1158px)"
+                  srcset="./images/main_portfolio/portfolio_main-mobile-min.jpg 1x, ./images/main_portfolio/portfolio_main2x-mobile-min.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./images/tablet_portfolio/tablet_portfolio-mobile-min.jpg 1x, ./images/tablet_portfolio/tablet_portfolio2x-mobile-min.jpg 2x">
+                <source media="(max-width: 767px)"
+                  srcset="./images/mobile_portfolio/mobile_portfolio-mobile-min.jpg 1x, ./images/mobile_portfolio/mobile_portfolio2x-mobile-min.jpg 2x">
+                <img src="./images/main_portfolio/portfolio_main-mobile-min.jpg" alt="setofphotos" width="360" />
+              </picture>
               <p class="fourth_s_wrap_img_page">
                 14 Stylish and User-Friendly App Design Concepts · Task
                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -401,7 +438,15 @@
           </li>
           <li class="fourth_s_item">
             <div class="fourth_s_wrap_img">
-              <img src="./images/main_portfolio/portfolio_main-girl-min.jpg" alt="prettygirl" width="360" />
+              <picture>
+                <source media="(min-width: 1158px)"
+                  srcset="./images/main_portfolio/portfolio_main-girl-min.jpg 1x, ./images/main_portfolio/portfolio_main2x-girl-min.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="./images/tablet_portfolio/tablet_portfolio-girl-min.jpg 1x, ./images/tablet_portfolio/tablet_portfolio2x-girl-min.jpg 2x">
+                <source media="(max-width: 767px)"
+                  srcset="./images/mobile_portfolio/mobile_portfolio-girl-min.jpg 1x, ./images/mobile_portfolio/mobile_portfolio2x-girl-min.jpg 2x">
+                <img src="./images/main_portfolio/portfolio_main-girl-min.jpg" alt="prettygirl" width="360" />
+              </picture>
               <p class="fourth_s_wrap_img_page">
                 14 Stylish and User-Friendly App Design Concepts · Task
                 Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -478,7 +523,7 @@
     </div>
   </footer>
 
-  <div class="modal_overlay">
+  <div class="modal_overlay is-open">
     <div class="modal_window">
       <button type="button" class="modal_w_button"><svg class="modal_svg" width="8" height="8">
           <use href="./images/form.svg#icon-Vector"></use>
